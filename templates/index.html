@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Prediction</title>
+</head>
+<body style="background-color: rgb(0, 255, 255);">
+    
+    <h1> Welcome to Iris Flower Prediction </h1>
+
+    <form method="GET" action ="/predict_type">
+
+            <label>Sepal Length:</label>
+            <input type = "text" name = "SepalLengthCm">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Sepal Width:</label>
+            <input type = "text" name = "SepalWidthCm">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Petal Length:</label>
+            <input type = "text" name = "PetalLengthCm">
+            </select>
+
+            <br>
+            <br>
+
+            <label>Petal Width:</label>
+            <input type = "text" name = "PetalWidthCm">
+            </select>
+
+            <br>
+            <br>
+
+            <br>
+            <br>
+
+            
+            <br>
+            <input type = "submit" value = "SUBMIT">
+
+            <br>
+            <p>The Species of flower will be <b>{{ prediction }} </p>
+
+        </form>
+
+
+</body>
+
+</html>
